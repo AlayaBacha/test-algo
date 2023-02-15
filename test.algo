@@ -1,0 +1,25 @@
+ALGORITHM test
+VAR
+    c : CHAR;
+    cc,cw,cv : INTEGER := 0;
+
+BEGIN
+REPEAT
+    
+
+  write("donnez un chat");
+  read(c);
+  cc := cc + 1;
+ IF (' ') THEN
+    cw := cw+1;
+ END_IF
+ IF (c = 'a' OR c= 'e' OR c='i' OR c ='o' OR c='u' OR c='y' OR c='A' OR c='E' or c= 'I' OR c= 'O' OR c= 'U' OR c= 'y' ) THEN
+    cv := cv + 1;
+ END_IF
+    UNTIL (c = '.')
+
+
+    write("nbr char",cc);
+    write("nbr word" , cw+1);
+    write("nbr v" , cv);
+END
